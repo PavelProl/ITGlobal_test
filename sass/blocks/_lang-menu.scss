@@ -1,0 +1,119 @@
+.lang-menu__header {
+    position: fixed;
+    z-index: 10;
+    top: 15px;
+    left: 100%;
+    transition: left 0.2s ease 0s;
+}
+
+.lang-menu__header._visible {
+    left: 20px;
+}
+
+.lang-menu__switcher {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    &:hover {
+        background: rgba(29, 125, 237, 0.1);
+    }
+
+    &:focus {
+        border: 2px solid rgba(131, 188, 255, 0.5);
+        border-radius: 5px;
+    }
+}
+
+.lang-menu__switcher:hover svg {
+    fill: #1D7DED;
+}
+
+.lang-menu__icon {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.lang-menu__icon img {
+    width: 100%;
+}
+
+.lang-menu__current {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.lang-menu__arrow {
+    margin-left: 5px;
+}
+
+.lang-menu__body {
+    position: fixed;
+    z-index: 10;
+    top: 100%;
+    left: 10px;
+    width: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: 0px 6px 10px rgba(116, 137, 155, 0.06), 0px 1px 18px rgba(116, 137, 155, 0.04), 0px 3px 5px rgba(116, 137, 155, 0.08);
+    border-radius: 2px;
+    transition: top 0.2s ease 0s;
+    overflow: auto;
+}
+
+.lang-menu__body._active {
+    top: 42px;
+}
+
+.lang-menu__title,
+.lang-menu__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #151617;
+}
+
+.lang-menu__title {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    display: block;
+    font-weight: 600;
+}
+
+.lang-menu__link {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lang-menu__link:hover {
+    background-color: #F1F8FE;
+}
+
+.lang-menu__img {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.lang-menu__img img {
+    display: block;
+    width: 100%;
+}
+
+.lang-menu__link {
+    display: flex;
+    align-items: center;
+}

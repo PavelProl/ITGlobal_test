@@ -1,0 +1,34 @@
+.page {
+    padding-top: 120px;
+}
+
+.page__section {
+    padding: 30px;
+    padding-bottom: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page__section_1 {
+    background-color: #fff;
+}
+
+.page__section_2 {
+    background-color: rgb(70, 138, 255);
+}
+
+.page__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.page__sub-title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.page__text {
+    font-size: 18px;
+    line-height: 30px;
+}
