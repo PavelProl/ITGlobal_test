@@ -23,14 +23,12 @@ ul, ol, li {
     list-style: none;
 }
 
-.container {
-    max-width: 1200px;
-    padding: 0px 15px;  
-    margin: 0 auto;
+ul {
+    display: block;
 }
 
-.wrapper {
-    min-height: 100%;
+.none {
+    display: none;
 }
 
 @font-face { font-family: Golos; src: url('Golos-Text_Regular.ttf'); }
