@@ -1,11 +1,3 @@
-.menu__header {
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .lang-menu {
     position: relative;
     display: flex;
@@ -13,14 +5,7 @@
     align-items: flex-start;
 }
 
-// .lang-menu__header {
-//     // position: fixed;
-//     // z-index: 10;
-//     // top: 15px;
-//     // left: 100%;
-//     transition: left 0.3s ease 0s;
-// }
-
+// --------------- lang-menu__header ---------------
 .lang-menu__header._visible {
     left: 20px;
 }
@@ -36,27 +21,29 @@
     cursor: pointer;
     border: 2px solid transparent;
 
-    &:hover {
-        background: rgba(29, 125, 237, 0.1);
-    }
-
+    &:hover,
     &:focus {
+        background: rgba(29, 125, 237, 0.1);
         border: 2px solid rgba(131, 188, 255, 0.5);
         border-radius: 5px;
-    }
-}
 
-.lang-menu__switcher:hover svg {
-    fill: #1D7DED;
+        svg {
+            fill: #1D7DED;
+        }
+    }
+
+    svg {
+        fill: #849BAF;
+    }
 }
 
 .lang-menu__icon {
     width: 24px;
     margin-right: 8px;
-}
 
-.lang-menu__icon img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .lang-menu__current {
@@ -68,7 +55,9 @@
 .lang-menu__arrow {
     margin-left: 5px;
 }
+// --------------- /lang-menu__header ---------------
 
+// --------------- lang-menu__body ---------------
 .lang-menu__body {
     position: absolute;
     z-index: 1;
@@ -96,6 +85,7 @@
 
 .lang-menu__title,
 .lang-menu__link {
+    display: block;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -106,20 +96,21 @@
     padding-top: 16px;
     padding-left: 16px;
     padding-bottom: 8px;
-    display: block;
     font-weight: 600;
 }
 
 .lang-menu__link {
-    display: flex;
-    align-items: center;
     padding-left: 15px;
-    padding-right: 30px;
+    padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &:hover {
+        background-color: #F1F8FE;
+    }
 }
 
-.lang-menu__link:hover {
+.lang-menu__link._current {
     background-color: #F1F8FE;
 }
 
@@ -127,14 +118,31 @@
     margin-right: 10px;
     width: 16px;
     height: 16px;
+
+    img {
+        display: block;
+        width: 100%;  
+    }
 }
 
-.lang-menu__img img {
-    display: block;
-    width: 100%;
-}
-
-.lang-menu__link {
+.item__content {
     display: flex;
+    justify-content: space-between;
+}
+
+.item__content-left {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
+
+.item__content-right._active {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item__content-right._none {
+    display: none;
+}
+// --------------- /lang-menu__body ---------------
