@@ -84,9 +84,9 @@
     width: 10px;
     height: 8px;
 
-    @media (min-width: 767px) {
-        display: none;
-    }
+    // @media (min-width: 1200px) {
+    //     display: none;
+    // }
 
     &:before,
     &:after {
@@ -163,22 +163,20 @@
 
 .menu__body-sub,
 .menu__body-subsub {
-    @media (max-width: 767px) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    background-color: #fff;
 
-        transform: translate(100%);
-        transition: all 0.3s ease 0s;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
+    transform: translate(100%);
+    transition: all 0.3s ease 0s;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .menu__body-sub._active,
